@@ -74,6 +74,56 @@ input, select, textarea {
 
 /* Custom */
 
+/* Images */
+.project-image-left, .project-image-left-double {
+	float: left;  
+	margin-right: 5em; 
+} 
+
+.project-image-right, .project-image-right-double{
+	float: right;  
+	margin-left: 5em; 
+} 
+
+@media screen and (max-width: 1170px) {
+
+	.project-image-right-double,  .project-image-left-double {
+		float: none;
+		margin-right: 0em; 
+		margin-left: 0em; 
+		margin-top: 0em !important;
+		padding: 0em;
+        display:table;
+		margin: auto; 
+	}
+}
+
+@media screen and (max-width: 780px) {
+
+	.project-image-right-double img,  .project-image-left-double img{
+		float: none;
+		margin-right: 0em; 
+		margin-left: 0em; 
+		margin-top: 0em !important;
+		padding: 0em;
+        display:table;
+		margin: auto; 
+	}
+}
+
+@media screen and (max-width: 540px) {
+
+	.project-image-left, .project-image-right {
+		float: none;
+		margin-right: 0em; 
+		margin-left: 0em; 
+		margin-top: 0em !important;
+		padding: 0em;
+        display:table;
+		margin: auto; 
+	}
+
+}
 /* Style the navbar */
 #navbar {
 	overflow: hidden;
@@ -153,12 +203,6 @@ input, select, textarea {
 	from {bottom: 30px; opacity: 1;}
 	to {bottom: 0; opacity: 0;}
   }
-
-
-.project-image {
-	
-}
-
 
 /* Project */
 .project img{

@@ -74,6 +74,46 @@ input, select, textarea {
 
 /* Custom */
 
+/* .avatar {
+	width: 200px;
+	border-collapse: separate; 
+	height: 200px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(URL) no-repeat;
+	box-shadow: 0 0 8px white;
+	-webkit-box-shadow: 0 0 8px rgba(255, 255, 255, .8);
+	-moz-box-shadow: 0 0 8px rgba(255, 255, 255, .8);
+	} */
+
+	.circle {
+		width: 200px;
+		height: 200px;
+		position: relative;
+		background-color: red;
+		animation-name: circle;
+		animation-duration: 0.4s;
+		animation-iteration-count: 1;
+		border-radius: 50%;
+		animation-timing-function:ease-out;
+		margin-bottom: 2em;
+		
+		border: solid 5px white;
+
+	  }
+	  
+	  @keyframes circle {
+		from {
+		  -webkit-clip-path: circle(0%);
+		  clip-path: circle(0%);
+		}
+		to {
+		  -webkit-clip-path: circle(120px);
+		  clip-path: circle(120px);
+		}
+	  }
+
 /* Images */
 .project-image-left, .project-image-left-double {
 	float: left;  
